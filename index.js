@@ -191,9 +191,6 @@ class DecoderHelper {
         }
       }
     } catch (error) {
-      logger.error(
-        `Err message - ${error.message}, Err Stack trace - ${error.stack}`
-      );
       throw new Error("Error al desencriptar");
     }
 
